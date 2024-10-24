@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi Màu Chữ</title>
+    <style>
+        #text {
+            color: black;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="text">Đổi màu tôi đi</div>
+    <button id="changeColorBtn">Đổi Màu Chữ</button>
+
+    <script>
+        document.getElementById('changeColorBtn').onclick = function() {
+            var textElement = document.getElementById('text');
+            if (textElement.style.color === 'black') {
+                textElement.style.color = 'blue'; 
+            } else {
+                textElement.style.color = 'black'; 
+            }
+        };
+    </script>
+
+</body>
+</html>
